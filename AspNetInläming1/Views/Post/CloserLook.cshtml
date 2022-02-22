@@ -1,0 +1,16 @@
+﻿@model AspNetInläming1.ViewModels.PostViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link href="~/css/ReadPost.css" asp-append-version="true" rel="stylesheet" />
+
+<header>
+    <h1>Du läser just nu någon annans tankar</h1>
+</header>
+<div class ="column-left">
+   <a asp-controller ="Post" asp-action ="ShowAllPosts" ><button class="btn1">Tillbaka</button></a>
+</div>
+<div class="column-right">
+    <h3>@Model.CurrentPost.Title</h3>
+    <p class="txt1">Skapad: @Model.CurrentPost.Date.ToShortDateString() Kategori: @Model.CurrentPost.Category.CategoryName</p>
+    <p class="txt2">@Model.CurrentPost.Text</p>
+    <br/>
+</div>

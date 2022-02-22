@@ -1,0 +1,85 @@
+﻿
+.column-left {
+    float: left;
+    width: 20%;
+    background-color: #8D021F;
+    height: 100%;
+}
+
+.column-right {
+    float: left;
+    width: 80%;
+    background-color: white;
+    height: 100%;
+}
+
+.text1
+{
+    margin-left: 10px;
+    font-family: Bahnschrift;
+}
+.text2
+{
+    font-family: Bahnschrift;
+    font-size: 28;
+}
+.text3 
+{
+    font-family: Bahnschrift;
+    font-size: 15;
+}
+
+.posts
+{
+    padding-left: 5px;
+}
+button
+{
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: Bahnschrift;
+}
+input
+{
+    margin-left:10px;
+    border-radius: 5px;
+}
+button:hover
+{
+    background-color: #D3D3D3;
+}
+
+body 
+{
+    background-color: white;
+}
+
+header 
+{
+    background-color: #D2AAAD;
+    height: 8%;
+    padding-left: 10px;
+    font-family: Rockwell;
+}
+hr
+{
+    background-color: #182A3B;
+}
+a
+{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a 
+{
+    text-decoration: none; 
+    color: black;
+}

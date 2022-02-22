@@ -1,0 +1,75 @@
+﻿header 
+{
+    background-color: #D2AAAD;
+    height: 8%;
+    padding-left: 10px;
+    font-family: Rockwell;
+}
+.column-left {
+    float: left;
+    width: 20%;
+    background-color: #8D021F;
+    height: 100%;
+}
+
+.column-right {
+    float: left;
+    width: 79%;
+    background-color: white;
+    height: 99%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+button:hover 
+{
+    background-color: #D3D3D3;
+}
+
+body 
+{
+    background-color: white;
+}
+
+button 
+{
+    border-radius: 5px;
+    font-family: Bahnschrift;
+}
+
+p
+{
+    font-family: Bahnschrift;
+    margin-left:10px;
+}
+label
+{
+    font-family:Bahnschrift;
+    font-size: 30;
+}
+input
+{
+    height: 5%;
+    width: 79%;
+    font-family: Bahnschrift;
+    font-size: 20;
+}
+select 
+{
+    height: 5%;
+    width: 20%;
+    font-family: Bahnschrift;
+    font-size: 20;
+}
+textarea 
+{
+    width:79%; 
+    height:50%;
+    resize: none;
+    font-family: Bahnschrift;
+    font-size: 16;
+}
+.btn1 
+{
+    margin-left: 10px;
+}

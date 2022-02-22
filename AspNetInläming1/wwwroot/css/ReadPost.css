@@ -1,0 +1,52 @@
+﻿header {
+    background-color: #D2AAAD;
+    height: 8%;
+    padding-left: 10px;
+    font-family: Rockwell;
+}
+
+.column-left {
+    float: left;
+    width: 20%;
+    background-color: #8D021F;
+    height: 100%;
+}
+
+.column-right {
+    float: left;
+    width: 79%;
+    background-color: white;
+    height: 99%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+button:hover {
+    background-color: #D3D3D3;
+}
+
+body {
+    background-color: white;
+}
+
+button {
+    border-radius: 5px;
+    font-family: Bahnschrift;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h3
+{
+    font-family:Rockwell;
+    font-size: 30;
+}
+.txt1
+{
+    font-family:Rockwell;
+    font-size: 16;
+}
+.txt2
+{
+    font-family:Rockwell;
+    font-size: 24;
+}

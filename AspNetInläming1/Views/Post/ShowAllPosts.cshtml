@@ -1,0 +1,32 @@
+﻿@model AspNetInläming1.ViewModels.PostViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link href="~/css/Index.css" asp-append-version="true" rel="stylesheet">
+<header>
+    <h1>Välkommen</h1>
+</header>
+
+  <div class="column-left" >
+    <p class ="text1">Letar du efter något?</p>
+    <form asp-controller="Post" asp-action="ShowAllPosts" method="post">
+         <input asp-for="Search" type= "text" />
+        <button type="submit">Sök</button>
+    </form>
+
+    <br/>
+    <br />
+    <p class ="text1">Har du något du vill dela med dig av? Klicka på knappen nedan för att dela med dig av dina tankar.</p>
+    <a asp-controller ="Post" asp-action ="MakePost" ><button>Skapa</button></a>
+    <br/>
+    <br />
+  </div>
+  <div class="column-right">
+    @foreach(var posts in Model.Posts)
+    {
+        <div class ="posts">
+        <a asp-controller ="Post" asp-action ="CloserLook" asp-route-id=@posts.PostId><p class="text2">@posts.Title</p></a>
+        <p class="text3">@posts.Date.ToShortDateString()</p>
+        <hr />
+        </div>
+    }
+  </div>
+ 

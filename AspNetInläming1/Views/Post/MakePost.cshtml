@@ -1,0 +1,31 @@
+﻿@model AspNetInläming1.ViewModels.PostViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<link href="~/css/MakePost.css" asp-append-version="true" rel="stylesheet" />
+
+<header>
+    <h1>Skapa</h1>
+</header>
+<div class= "column-left">
+    <p>Dina tankar är viktiga</p>
+    <a asp-controller ="Post" asp-action ="ShowAllPosts" ><button class ="btn1">Tillbaka</button></a>
+</div>
+<div class="column-right">
+<form asp-controller="Post" asp-action="AddPost" method="post">
+    <label asp-for="CurrentPost.Title">Titel: </label>
+    <input type="text" asp-for="CurrentPost.Title" />
+    <br/>
+    <br />
+    <label>Kategori: </label>
+    <select asp-for="CurrentPost.CategoryId" asp-items=@Model.Categories></select>
+    <br/>
+    <br />
+    <label asp-for="CurrentPost.Text">Vad har du att berätta idag?</label>
+    <br />
+    <textarea asp-for="CurrentPost.Text"></textarea>
+    <br/>
+    <label asp-for="CurrentPost.Date">Skapad: @Model.PostedDate.ToShortDateString()</label>
+    <br/>
+    <br />
+    <button type="submit">Dela tankar</button>
+</form>
+</div>
